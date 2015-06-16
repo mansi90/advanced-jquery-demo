@@ -60,3 +60,15 @@ function ajaxCallDemo(element) {
         });
 }
 
+var ajaxCallDemoViaGetJSON = function (element) {
+    $.get($(element).data('ajax-url'), function (data) {
+        var items = [];
+        $.each(data, function (key, val) {
+            items.push("<li id='" + key + "'>" + val + "</li>");
+        });
+
+        var ul = "<ul>" + items.join("") + "</ul>";
+        $('#my-listing').html(ul);
+    });
+};
+
