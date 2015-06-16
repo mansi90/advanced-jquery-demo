@@ -1,4 +1,3 @@
-<%@ page import="com.advancedJquery.Author" %>
 <!doctype html>
 <html>
 <head>

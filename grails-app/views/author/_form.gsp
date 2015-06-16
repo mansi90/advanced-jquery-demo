@@ -1,4 +1,3 @@
-<%@ page import="com.advancedJquery.Author" %>
 <div class="fieldcontain ${hasErrors(bean: authorInstance, field: 'name', 'error')} ">
     <label for="name">
         <g:message code="author.name.label" default="Name"/>

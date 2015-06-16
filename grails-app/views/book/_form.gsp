@@ -1,4 +1,4 @@
-<%@ page import="advancedJquery.Author; com.advancedJquery.Book" %>
+<%@ page import="advancedJquery.Author" %>
 <div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'author', 'error')} required">
     <label for="author">
         <g:message code="book.author.label" default="Author"/>
