@@ -48,3 +48,15 @@ function jqueryEachWithJson2() {
     }
 }
 
+function ajaxCallDemo(element) {
+    var input = $(element).closest('.inner-section').find('input[name=someText]');
+    $.ajax({
+        type: "GET",
+        url: $(element).data('ajax-url'),
+        data: {someText: input.val()}
+    }).success(function () {
+            alert('Got Success');
+            input.val('');
+        });
+}
+
