@@ -4,6 +4,12 @@
     <meta name="layout" content="main">
     <title>DEMO Page</title>
     <style type="text/css">
+    .green-button, .green-button:focus {
+        background: green;
+        border: 1px solid green;
+        color: #ffffff;
+    }
+
     .main-section {
         padding: 20px;
     }
@@ -27,29 +33,40 @@
 
     .main-section .inner-section .top-inner-section input[type=button] {
         width: 90px;
-        background: green;
-        border: 1px solid green;
         margin-top: 18px;
-        color: #ffffff;
         float: right;
         margin-right: 100px;
     }
 
-    .main-section .inner-section .bottom-inner-section {
-        height: 250px;
+    .main-section .inner-section .middle-inner-section {
+        height: 175px;
     }
 
-    .main-section .inner-section .bottom-inner-section #my-listing {
+    .main-section .inner-section .middle-inner-section #my-listing {
         padding: 40px;
+    }
+
+    .main-section .inner-section .middle-inner-section input[type=button] {
+        width: 140px;
+        margin-top: 18px;
+        margin-left: 20px;
+    }
+
+    .main-section .inner-section .bottom-inner-section {
+        padding-top: 18px;
+        padding-left: 20px;
+        height: 200px;
     }
 
     .main-section .inner-section .bottom-inner-section input[type=button] {
         width: 140px;
-        background: green;
-        border: 1px solid green;
-        margin-top: 18px;
-        margin-left: 20px;
-        color: #ffffff;
+    }
+
+    .block {
+        background-color: blue;
+        width: 150px;
+        height: 70px;
+        margin: 20px 0;
     }
 
     </style>
@@ -76,15 +93,22 @@
         <div class="top-inner-section">
             <label>Test Your Ajax Call ?</label>
             <input name="someText" type="text"><br/>
-            <input type="button" onclick="ajaxCallDemo(this)" value="SUBMIT"
+            <input type="button" onclick="ajaxCallDemo(this)" value="SUBMIT" class="green-button"
                    data-ajax-url="${createLink(controller: 'util', action: 'demoMyAjax')}">
         </div>
 
-        <div class="bottom-inner-section">
-            <input type="button" onclick="ajaxCallDemoViaGetJSON(this)" value="Load Result >"
+        <div class="middle-inner-section">
+            <input type="button" class="green-button" onclick="ajaxCallDemoViaGetJSON(this)" value="Load Result >"
                    data-ajax-url="${createLink(controller: 'util', action: 'demoGetJson')}">
 
             <div id="my-listing"></div>
+        </div>
+
+        <div class="bottom-inner-section">
+            <input type="button" onclick="getScriptDemo()" value="Load Script >" class="green-button"><br/><br/>
+            <button id="go">&raquo; Run</button><br/>
+
+            <div class="block"></div>
         </div>
     </div>
 </div>

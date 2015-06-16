@@ -72,3 +72,26 @@ var ajaxCallDemoViaGetJSON = function (element) {
     });
 };
 
+var getScriptDemo = function () {
+    var url = "https://code.jquery.com/color/jquery.color.js", goBtn = $("#go");
+    $.getScript(url, function () {
+        goBtn.css({'background-color': 'red', 'border': '1px solid red', 'color': 'white'});
+        goBtn.click(function () {
+            $(".block")
+                .animate({
+                    backgroundColor: "rgb(255, 180, 180)"
+                }, 1000)
+                .delay(500)
+                .animate({
+                    backgroundColor: "olive"
+                }, 1000)
+                .delay(500)
+                .animate({
+                    backgroundColor: "#00f"
+                }, 1000);
+        });
+    });
+
+    return 'Something!'
+}
+
