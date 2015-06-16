@@ -1,13 +1,10 @@
-<%@ page import="com.advancedJquery.Book" %>
-
-
-
+<%@ page import="advancedJquery.Author; com.advancedJquery.Book" %>
 <div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'author', 'error')} required">
     <label for="author">
         <g:message code="book.author.label" default="Author"/>
         <span class="required-indicator">*</span>
     </label>
-    <g:select id="author" name="author.id" from="${com.advancedJquery.Author.list()}" optionKey="id" required=""
+    <g:select id="author" name="author.id" from="${Author.list()}" optionKey="id" required=""
               value="${bookInstance?.author?.id}" class="many-to-one"/>
 </div>
 
