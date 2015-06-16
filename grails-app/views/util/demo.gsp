@@ -16,12 +16,12 @@
 
 <body>
 <div class="main-section">
-    <p> Paragraph 1</p>
-    <p> Paragraph 2</p>
-    <p> Paragraph 3</p>
-    <p> Paragraph 4</p>
-    <p> Paragraph 5</p>
-    <p> Paragraph 6</p>
+    <p> Paragraph One</p>
+    <p> Paragraph Two</p>
+    <p> Paragraph Three</p>
+    <p> Paragraph Four</p>
+    <p> Paragraph Five</p>
+    <p> Paragraph Six</p>
 </div>
 </body>
 </html>
