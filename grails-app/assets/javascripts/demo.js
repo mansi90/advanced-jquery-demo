@@ -93,5 +93,10 @@ var getScriptDemo = function () {
     });
 
     return 'Something!'
+};
+
+var loadDataIntoSection = function (element) {
+    var url = $(element).data('ajax-url');
+    $("#new-projects").load(url);
 }
 

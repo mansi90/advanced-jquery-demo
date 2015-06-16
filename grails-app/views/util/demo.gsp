@@ -15,8 +15,19 @@
     }
 
     .main-section .inner-section {
-        width: 50%;
         float: left;
+    }
+
+    .main-section .inner-section {
+        width: 45%;
+    }
+
+    .main-section .inner-section:first-of-type {
+        width: 20%;
+    }
+
+    .main-section .inner-section:last-of-type {
+        width: 35%;
     }
 
     .main-section .inner-section p {
@@ -110,6 +121,13 @@
 
             <div class="block"></div>
         </div>
+    </div>
+
+    <div class="inner-section">
+        <b>Projects:</b>
+        <input type="button" onclick="loadDataIntoSection(this)" value="Load >" class="green-button"
+               data-ajax-url="${createLink(controller: 'util', action: 'demoLoadHtml')}"><br/><br/>
+        <ol id="new-projects"></ol>
     </div>
 </div>
 </body>
