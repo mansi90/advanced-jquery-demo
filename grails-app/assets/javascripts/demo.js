@@ -98,5 +98,23 @@ var getScriptDemo = function () {
 var loadDataIntoSection = function (element) {
     var url = $(element).data('ajax-url');
     $("#new-projects").load(url);
-}
+};
+
+var jqueryParamExample = function () {
+    /*
+     Create a serialized representation of an array, a plain object,
+     or a jQuery object suitable for use in a URL query string or Ajax request.
+     */
+    var myObject = {
+        a: {
+            one: 1,
+            two: 2,
+            three: 3
+        },
+        b: [ 1, 2, 3 ]
+    };
+
+    /* URI-decoded version  */
+    console.log($.param(myObject));
+};
 
