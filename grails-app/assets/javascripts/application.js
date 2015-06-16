@@ -1,7 +1,7 @@
-jQuery(document).ready(function () {
+$(document).ready(function () {
 //    $("#datepicker").datepicker();
     $("#datepicker").datepicker({ dateFormat:"dd-mm-yy" });
-    jQuery("#createForm").validate({
+    $("#createForm").validate({
         rules:{
             name:{
                 required:true,
