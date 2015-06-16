@@ -17,12 +17,6 @@
             var params = {name: 'test user', email: 'test@gmail.com', id: 24};
             console.log(jQuery.param(params));
         });
-
-        var urls = {
-            checkEmailURL: "${createLink(controller: 'author', action: 'checkEmailAvailability')}",
-            checkEmailJSONURL: "${createLink(controller: 'author', action: 'checkEmailAvailabilityWithJSONResponse')}",
-            getAuthorListURL: "${createLink(controller: 'author', action: 'getListOfAuthors')}"
-        }
     </script>
 </head>
 
