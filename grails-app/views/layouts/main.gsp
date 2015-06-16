@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
     <asset:javascript src="jquery-1.11.1.js"/>
-    %{--<asset:javascript src="application.js"/>--}%
+    <asset:javascript src="jquery-ui.js"/>
+    <asset:stylesheet src="jquery-ui-1.8.15.custom.css"/>
     <g:layoutHead/>
 </head>
 

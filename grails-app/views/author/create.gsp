@@ -4,8 +4,8 @@
     <meta name="layout" content="main">
     <g:set var="entityName" value="${message(code: 'author.label', default: 'Author')}"/>
     <title><g:message code="default.create.label" args="[entityName]"/></title>
-    %{--<g:javascript src="jquery.validate.js"/>--}%
-    <script type="text/javascript" src="${resource(dir: "js", file: "jquery.validate.js")}"></script>
+    <asset:javascript src="jquery.validate.js"/>
+    <asset:javascript src="application.js"/>
     <script type="text/javascript">
         var urls = {
             checkEmailURL: "${createLink(controller: 'author', action: 'checkEmailAvailability')}",
