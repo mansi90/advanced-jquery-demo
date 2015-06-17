@@ -74,6 +74,8 @@
             </div>
         </div>
 
+        <input type="button" class="dialogButton" value="OPEN DIALOG"/>
+
         <div id="tabs-2">
             This is some random text to illustrate the usage of a Jquery UI Tabbed Interface. Anyways LOREM IPSUM text was so boring that
             I decided to write down something that you guys might actually read and I can't believe that you actually fell for it.

@@ -28,13 +28,8 @@ $(document).ready(function () {
 
     $("#tabs").tabs();
 
-//    $("#dialog:ui-dialog").dialog("destroy");
     $("#dialog-message").dialog({
-        draggable:true,
         autoOpen:false,
-        modal:true,
-        show:'fadeIn',
-        hide:'fadeOut',
         width:700,
         resizable:false,
         buttons:{

@@ -54,14 +54,14 @@ function ajaxCallDemo(element) {
         type: "GET",
         url: $(element).data('ajax-url'),
         data: {someText: input.val()}
-    }).success(function () {
-            alert('Got Success');
+    }).success(function (data) {
+            alert('Got Success   -   ' + data);
             input.val('');
-        });
+        }).error(function (data) {});
 }
 
 var ajaxCallDemoViaGetJSON = function (element) {
-    $.get($(element).data('ajax-url'), function (data) {
+    $.getJSON($(element).data('ajax-url'), function (data) {
         var items = [];
         $.each(data, function (key, val) {
             items.push("<li id='" + key + "'>" + val + "</li>");
