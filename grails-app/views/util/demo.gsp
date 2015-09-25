@@ -109,7 +109,7 @@
         </div>
 
         <div class="middle-inner-section">
-            <input type="button" class="green-button" onclick="ajaxCallDemoViaGetJSON(this)" value="Load Result >"
+            <input type="button" class="green-button" onclick="ajaxCallDemoViaGetJSON(this)" value="getJson Result >"
                    data-ajax-url="${createLink(controller: 'util', action: 'demoGetJson')}">
 
             <div id="my-listing"></div>
