@@ -26,25 +26,25 @@
 
     <form id="test">
         <div style="padding: 10px">
-            <label>1.</label>
-            <input type="text" name="a" value="1" id="a"/>
+            <label>1 : </label>
+            <input type="text" name="a" value="first input" id="a"/>
         </div>
 
         <div style="padding: 10px">
-            <label>2.</label>
-            <input type="text" name="b" value="2" id="b"/></div>
+            <label>2 : </label>
+            <input type="text" name="b" value="second input" id="b"/></div>
 
         <div>
-            <input type="hidden" name="c" value="3" id="c"/>
+            <input type="hidden" name="c" value="third input" id="c"/>
         </div>
 
         <div style="padding: 10px">
-            <label>3.</label>
-            <textarea name="d" rows="2" cols="4" style="height: 20px">4</textarea>
+            <label>3 : </label>
+            <textarea name="d" rows="2" cols="4" style="height: 20px">textarea1</textarea>
         </div>
 
         <div style="padding: 10px">
-            <label>4.</label>
+            <label>4 : </label>
             <select name="fruit">
                 <option value="apple" selected="selected">Apple</option>
                 <option value="mango">Mange</option>
@@ -53,8 +53,8 @@
         </div>
 
         <div style="padding: 10px">
-            <label>5.</label>
-            <input type="checkbox" name="f" value="8" id="f"/>
+            <label>5 : </label>
+            <input type="checkbox" name="f" value=" fourth input" id="f"/>
         </div>
 
         <div style="padding: 10px">
