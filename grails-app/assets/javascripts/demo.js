@@ -57,7 +57,8 @@ function ajaxCallDemo(element) {
     }).success(function (data) {
             alert('Got Success   -   ' + data);
             input.val('');
-        }).error(function (data) {});
+        }).error(function (data) {
+        });
 }
 
 var ajaxCallDemoViaGetJSON = function (element) {
@@ -116,5 +117,9 @@ var jqueryParamExample = function () {
 
     /* URI-decoded version  */
     console.log($.param(myObject));
+};
+
+var jquerySerializeExample = function () {
+    console.log($("input[type=text]").serialize());
 };
 
